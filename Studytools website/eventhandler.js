@@ -1,0 +1,1 @@
+document.getElementById("sitename").addEventListener("hover", displayDate);

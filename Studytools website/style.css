@@ -1,0 +1,138 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+head {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    font-size: 16px;
+    background-color: #2d2d30;
+/**    background-image: linear-gradient(#F1D66F, #D66541);**/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+}
+
+.header {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 15px;
+  background-color: #2d2d30;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.header i {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-left: 15px;
+  translate: 0 3px;
+  background-color: #2d2d30;
+}
+
+.header i {
+  margin-left: 15px;
+}
+
+.header .name {
+  font-size: 30px;
+  text-align: left;
+  margin: 5px 1% 0;
+}
+
+.header .menu {
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .socials {
+  color: whitesmoke;
+  text-align: right;
+  margin: 5px 1% 0;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.socials:hover {
+  cursor: pointer;
+}
+
+.menu button {
+  font-size: 14px;
+  color: whitesmoke;
+  background-color: #2d2d30;
+  border: none;
+}
+
+.upload {
+  background: linear-gradient(#2d2d30, #2d2d30) padding-box,
+  linear-gradient(to right, darkblue, darkorchid) border-box;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: 10%;
+    height: 60px;
+    width: 300px;
+    background-color: #2d2d30;
+    /**background-image: linear-gradient(to bottom right, #6fa5f6, #2b72d5);**/
+    border: solid 5px;
+    border-image: linear-gradient(to bottom right, #6fa5f6, #c084fc);
+    border-radius: 30px;
+}
+
+.container {
+  width: 100%;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1{
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 100px;
+  width: 50%;
+  user-select: none;
+}
+
+.textbrk {
+  margin-top: 70px;
+  background-color:#6a6a71;
+  height: 70px;
+  width: 4px;
+  border-radius: 10px;
+}
+
+.desc{
+  font-size: 16px;
+  color: whitesmoke;
+  width: 30%;
+  margin-left: 120px;
+  margin-top: 70px;
+}
+
+.align {
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  color: #F1D66F
+}
