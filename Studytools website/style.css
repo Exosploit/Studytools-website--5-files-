@@ -2,7 +2,20 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:#8e8e95;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#6a6a71;
+  border-radius: 10px;
 }
 
 head {
@@ -54,10 +67,18 @@ body {
 }
 
 .header .menu {
-  font-size: 20px;
+  color: whitesmoke;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.menu a {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 .header .socials {
@@ -95,7 +116,7 @@ body {
   font-size: 60px;
   font-weight: bold;
   margin-top: 100px;
-  width: 540px;
+  width: 640px;
   user-select: none;
 }
 
@@ -111,27 +132,235 @@ body {
   font-size: 16px;
   color: whitesmoke;
   width: 30%;
-  margin-top: 70px;
+  margin-top: 85px;
 }
 
 span {
   color: #F1D66F
 }
 
+.space {
+  height: 10px;
+}
+
+.features {
+  background: linear-gradient(180deg, rgba(176,45,227,1) 0%, rgba(176,45,227,1) 4%, rgba(165,64,237,1) 48%, rgba(122,65,255,1) 100%);
+  height: 1080px;
+  margin-top: -5px;
+  padding-left: 125px;
+  padding-right: 100px;
+}
+
+.features .icon {
+  color: whitesmoke;
+  background-color: #2d2d30;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.icon i {
+  font-size: 30px;
+  padding: 10px;
+  overflow: clip;
+}
+
+.features .title {
+  margin-top: 10px;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.features .subtext {
+  margin-top: -20px;
+  font-size: 14px;
+  color: whitesmoke;
+  width: 400px;
+  font-weight: normal;
+}
+
+.features .left {
+  margin-top: 125px;
+  text-align: left;
+  align-items: left;
+}
+
+.features .right {
+  margin-top: 50px;
+  text-align: left;
+  float: right;
+}
+
+.features .right .icon {
+  float: right;
+  margin-top: -50px;
+  margin-right: 375px;
+}
+
 
 /* Media Rules */
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin-left: 25%;
+    width: 50%;
+  }
+
   .textbrk {
-    display: none;
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin-top: 0;
   }
   
   .desc {
     display: block;
-    margin-top: 0;
+    margin-top: 40px;
+    width: 100%;
   }
 
   .container h1 {
     width: 100%;
   }
+
+  .features .subtext {
+    width: 300px;
+    font-size: 12px;
+  }
+
+  .features .right .icon {
+  margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .features {
+    padding-left: 75px;
+    padding-right: 0;
+  }
+
+  .icon i {
+    font-size: 20px;
+    padding: 7.5px;
+    overflow: clip;
+  }
+
+  .features .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+  }
+
+  .features .title {
+    font-size: 20px;
+  }
+
+  .features .subtext {
+    font-size: 10px;
+  }
+
+  .features .right .icon {
+    margin-top: -35px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .desc {
+    font-size: 14px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+
+  .menu a {
+    font-size: 10px;
+  }
+
+  .header .name {
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .header .socials {
+    width: 100px;
+  }
+
+  .header i {
+    font-size: 15px;
+  }
+
+
+
+  .features {
+    padding-left: 50px;
+  }
+
+  .icon i {
+    font-size: 12px;
+    padding: 4px;
+    overflow: clip;
+  }
+
+  .features .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+  }
+
+  .features .title {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .features .subtext {
+    font-size: 8px;
+    width: 250px;
+  }
+
+  .features .right .icon {
+    margin-top: -20px;
+  }
+
+  .features .right {
+    margin-right: -75px;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .features {
+    padding-left: 35px;
+  }
+
+  .features .right {
+    margin-right: -105px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 590px) {
+  
+  .features .right{
+    margin-top: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  
+  .features .left{
+    margin-top: 160px;
+  }
+
+  .features .right{
+    padding-left: 35px;
+  }
+
 }
