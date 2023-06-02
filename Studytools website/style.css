@@ -103,6 +103,10 @@ body {
   border: none;
 }
 
+a:hover {
+  color:#b4b4b4;
+}
+
 .container {
   width: 100%;
   color: whitesmoke;
@@ -145,10 +149,11 @@ span {
 
 .features {
   background: linear-gradient(180deg, rgba(176,45,227,1) 0%, rgba(176,45,227,1) 4%, rgba(165,64,237,1) 48%, rgba(122,65,255,1) 100%);
-  height: 1080px;
+  height: 920px;
   margin-top: -5px;
   padding-left: 125px;
   padding-right: 100px;
+  border-bottom: 2px solid #FFFFFF;
 }
 
 .features .icon {
@@ -196,6 +201,28 @@ span {
   float: right;
   margin-top: -50px;
   margin-right: 375px;
+}
+
+.footer {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Added this property */
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 40px;
+  color: whitesmoke;
+  height: 80px; 
+}
+
+.footer .socials {
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.footer a {
+  color: whitesmoke;
+  margin-right: 10px;
 }
 
 
