@@ -2,6 +2,7 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -88,8 +89,13 @@ body {
   width: 200px;
 }
 
-.menu:hover {
+.header i {
+  transition: all 0.3s;
+}
+
+.header i:hover {
   cursor: pointer;
+  transform: translate(0, -3px)
 }
 
 .socials:hover {
@@ -149,10 +155,10 @@ span {
 
 .features {
   background: linear-gradient(180deg, rgba(176,45,227,1) 0%, rgba(176,45,227,1) 4%, rgba(165,64,237,1) 48%, rgba(122,65,255,1) 100%);
-  height: 920px;
+  height: 1300px;
   margin-top: -5px;
-  padding-left: 125px;
-  padding-right: 100px;
+  padding-left: 325px;
+  padding-right: 300px;
   border-bottom: 2px solid #FFFFFF;
 }
 
@@ -203,6 +209,52 @@ span {
   margin-right: 375px;
 }
 
+
+.features .download {
+  font-size: 75px;
+  margin-top: 100px;
+  color: black;
+}
+
+.download h1 {
+  color: whitesmoke;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  user-select: none;
+}
+
+.download p {
+  color: whitesmoke;
+  font-size: 14px;
+  margin: 0;
+  user-select: none;
+}
+
+.download p a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.download a button {
+  background-color:#2d2d30;
+  color: whitesmoke;
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.download a button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
 .footer {
   user-select: none;
   display: flex;
@@ -228,17 +280,14 @@ span {
 
 /* Media Rules */
 
+
 @media only screen and (max-width: 1600px) {
-  
-  .features .left{
-    padding-left: 160px;
+  .features {
+    padding-left: 125px;
+    padding-right: 100px;
   }
-
-  .features .right{
-    padding-right: 160px;
-  }
-
 }
+
 
 @media only screen and (max-width: 1200px) {
   .container {
@@ -271,6 +320,25 @@ span {
   .features .right .icon {
   margin-top: -50px;
   }
+
+  .features .download {
+    font-size: 50px;
+  }
+
+  .download h1 {
+    font-size: 30px;
+  }
+
+  .download p {
+    font-size: 10px;
+  }
+
+  .download a button {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 15px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -278,6 +346,7 @@ span {
   .features {
     padding-left: 75px;
     padding-right: 0;
+    height: 920px;
   }
 
   .icon i {
@@ -364,9 +433,26 @@ span {
     margin-top: -20px;
   }
 
-  .features .right {
-    margin-right: -75px;
+
+  .features .download {
+    font-size: 35px;
   }
+
+  .download h1 {
+    font-size: 25px;
+  }
+
+  .download p {
+    font-size: 8px;
+  }
+
+  .download a button {
+    height: 35px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
 }
 
 
@@ -374,10 +460,30 @@ span {
 
   .features {
     padding-left: 35px;
+    height: 750px;
   }
 
   .features .right {
     margin-right: -105px;
+  }
+
+  .features .download {
+    font-size: 25px;
+  }
+
+  .download h1 {
+    font-size: 15px;
+  }
+
+  .download p {
+    font-size: 5px;
+  }
+
+  .download a button {
+    height: 25px;
+    width: 100px;
+    font-size: 10px;
+    border-radius: 7.5px;
   }
 
 }
@@ -394,6 +500,7 @@ span {
 
 @media only screen and (max-width: 380px) {
   
+
   .features .left{
     margin-top: 160px;
   }
