@@ -228,6 +228,18 @@ span {
 
 /* Media Rules */
 
+@media only screen and (max-width: 1600px) {
+  
+  .features .left{
+    padding-left: 160px;
+  }
+
+  .features .right{
+    padding-right: 160px;
+  }
+
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     margin-left: 25%;
