@@ -160,6 +160,7 @@ span {
   padding-left: 325px;
   padding-right: 300px;
   border-bottom: 2px solid #FFFFFF;
+  position: relative;
 }
 
 .features .icon {
@@ -213,7 +214,15 @@ span {
 .features .download {
   font-size: 75px;
   margin-top: 100px;
+  margin-left: 0px;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .download h1 {
